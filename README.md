@@ -18,7 +18,7 @@ With a JSON file of previous guesses and their scores:
 Pipe it into `jotto` to get the best possible next guess:
 
 ``` bash
-$ cat guesses.json | jotto
+$ jotto < guesses.json
 
     Imported : 12,478 words
        Using :  8,013 words
