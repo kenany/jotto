@@ -36,7 +36,7 @@ $ npm install -g jotto
 var jotto = require('jotto');
 ```
 
-## jotto(words, possibleWords)
+### jotto(words, possibleWords)
 
 Given an _Array_ `words` of every possible Jotto word and an _Array_
 `possibleWords` of every word word that could be the solution to the current
