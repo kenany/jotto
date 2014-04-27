@@ -1,6 +1,6 @@
 # jotto
 
-Jotto solver.
+[Jotto](https://en.wikipedia.org/wiki/Jotto) solver.
 
 ## Example
 
