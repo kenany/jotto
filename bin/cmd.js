@@ -2,6 +2,7 @@ var chalk = require('chalk');
 var fs = require('graceful-fs');
 var humanize = require('humanize-number');
 var jots = require('jots');
+var JSONStream = require('JSONStream');
 var filter = require('lodash.filter');
 var forEach = require('lodash.foreach');
 var forOwn = require('lodash.forown');
@@ -22,12 +23,11 @@ fs.createReadStream(path.resolve(__dirname, '../5words.txt'))
   })
   .on('end', function() {
     if (!process.stdin.isTTY) {
-      var data = '';
       process.stdin
-        .on('data', function(d) { data += d })
-        .on('end', function() {
-          prevguesses = JSON.parse(data);
-          next()
+        .pipe(JSONStream.parse())
+        .on('root', function(obj) {
+          prevguesses = obj;
+          next();
         });
     }
     else {
