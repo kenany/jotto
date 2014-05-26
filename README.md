@@ -23,7 +23,7 @@ $ jotto < guesses.json
     Imported : 12,478 words
        Using :  8,013 words
     Possible :    935 words
-  Best guess : plats
+  Best guess : irone
 ```
 
 ## Installation
@@ -38,7 +38,12 @@ $ npm install -g jotto
 var jotto = require('jotto');
 ```
 
-### jotto(words, possibleWords)
+### jotto.narrowDownPossibleWords(words, previousGuesses)
+
+Narrows down the possible solutions to the current puzzle based on an _Array_
+of `previousGuesses`.
+
+### jotto.bestGuess(words, possibleWords)
 
 Given an _Array_ `words` of every possible Jotto word and an _Array_
 `possibleWords` of every word that could be the solution to the current

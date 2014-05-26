@@ -1,6 +1,6 @@
 var jots = require('jots');
-var contains = require('lodash.contains');
 var forEach = require('lodash.foreach');
+var forOwn = require('lodash.forown');
 var min = require('lodash.min');
 
 /**
@@ -41,6 +41,28 @@ function guessValue(possibleWords, guess) {
 }
 
 /**
+ * Narrows down possible solutions based on previous guesses.
+ *
+ * @param {Array} words
+ * @param {Array} previous guesses
+ * @return {Array} possible words
+ * @api public
+ */
+function narrowDownPossibleWords(words, previousGuesses) {
+  forOwn(previousGuesses, function(score, guess) {
+    var possibilities = [];
+    forEach(words, function(word) {
+      if (jots(word, guess) === score) {
+        possibilities.push(word);
+      }
+    });
+    words = possibilities;
+  });
+
+  return words;
+}
+
+/**
  * Figure out the best possible guess.
  *
  * @param {Array} words
@@ -59,11 +81,12 @@ function bestGuess(words, possibleWords) {
    * @api private
    */
   function prefer(guess) {
-    if (!contains(possibleWords, guess)) {
-      return Infinity;
-    }
     return guessValue(possibleWords, guess);
   }
 }
 
-module.exports = bestGuess;
+var jotto = {};
+jotto.narrowDownPossibleWords = narrowDownPossibleWords;
+jotto.bestGuess = bestGuess;
+
+module.exports = jotto;
