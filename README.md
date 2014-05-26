@@ -40,12 +40,22 @@ var jotto = require('jotto');
 
 ### jotto.narrowDownPossibleWords(words, previousGuesses)
 
-Narrows down the possible solutions to the current puzzle based on an _Array_
-of `previousGuesses`.
+Given an _Array_ `words` of words and an _Object_ `previousGuesses` like this:
+
+``` javascript
+{
+  'bread': 1,
+  'anvil': 2
+}
+```
+
+...wherein the key is a guess and the value is the score (in
+[jots](https://github.com/KenanY/jots)) that the guesses received, narrows down
+the possible solutions to the current puzzle and returns the narrowed-down
+_Array_ of words.
 
 ### jotto.bestGuess(words, possibleWords)
 
-Given an _Array_ `words` of every possible Jotto word and an _Array_
-`possibleWords` of every word that could be the solution to the current
-Jotto puzzle, returns the word that would narrow down the possible words the
-most (the "best guess").
+Given the _Array_ `words` that you used for `jotto.narrowDownPossibleWords` and
+the _Array_ `possibleWords` that was returned, returns the word that would
+narrow down the possible words the most (the "best guess").
