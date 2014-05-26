@@ -49,8 +49,8 @@ Given an _Array_ `words` of words and an _Object_ `previousGuesses` like this:
 }
 ```
 
-...wherein the key is a guess and the value is the score (in
-[jots](https://github.com/KenanY/jots)) that the guesses received, narrows down
+...wherein each key is a guess and each value is the score (in
+[jots](https://github.com/KenanY/jots)) that the guess received, narrows down
 the possible solutions to the current puzzle and returns the narrowed-down
 _Array_ of words.
 
