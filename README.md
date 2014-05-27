@@ -1,5 +1,6 @@
 # jotto
 
+[![Build Status](https://travis-ci.org/KenanY/jotto.svg)](https://travis-ci.org/KenanY/jotto)
 [![Dependency Status](https://gemnasium.com/KenanY/jotto.svg)](https://gemnasium.com/KenanY/jotto)
 
 [Jotto](https://en.wikipedia.org/wiki/Jotto) solver.
