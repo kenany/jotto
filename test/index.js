@@ -1,13 +1,11 @@
 var jotto = require('../');
 var test = require('tape');
-var fs = require('graceful-fs');
 var filter = require('lodash.filter');
 var forEach = require('lodash.foreach');
 var isPlainObject = require('lodash.isplainobject');
 var isFunction = require('lodash.isfunction');
 var noRepeatedLetters = require('no-repeated-letters');
-var path = require('path');
-var split = require('split');
+var words = require('sowpods-five');
 
 test('exports an object that contains two functions', function(t) {
   t.plan(3);
@@ -29,17 +27,9 @@ test('calculates best guess', function(t) {
     [{'abcde': 1, 'fghij': 1, 'klmno': 1, 'pqrst': 1, 'uvwxy': 1}, 'riley']
   ];
 
-  var words = [];
-  fs.createReadStream(path.resolve(__dirname, '../5words.txt'))
-    .pipe(split())
-    .on('data', function(line) {
-      words.push(line);
-    })
-    .on('end', function() {
-      words = filter(words, noRepeatedLetters);
-      forEach(TEST_GUESSES, function(fixture) {
-        var possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
-        t.equal(jotto.bestGuess(words, possibleWords), fixture[1]);
-      });
-    });
+  words = filter(words, noRepeatedLetters);
+  forEach(TEST_GUESSES, function(fixture) {
+    var possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
+    t.equal(jotto.bestGuess(words, possibleWords), fixture[1]);
+  });
 });
