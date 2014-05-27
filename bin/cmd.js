@@ -9,7 +9,7 @@ var path = require('path');
 var printf = require('printf');
 var split = require('split');
 
-var prevguesses = {};
+var previousGuesses = {};
 
 var words = [];
 fs.createReadStream(path.resolve(__dirname, '../5words.txt'))
@@ -22,7 +22,7 @@ fs.createReadStream(path.resolve(__dirname, '../5words.txt'))
       process.stdin
         .pipe(JSONStream.parse())
         .on('root', function(obj) {
-          prevguesses = obj;
+          previousGuesses = obj;
           next();
         });
     }
@@ -38,7 +38,7 @@ function next() {
   words = filter(words, noRepeatedLetters);
   console.log(printf('%22s : %6s words', chalk.cyan('Using'), humanize(words.length)));
 
-  var possibleWords = jotto.narrowDownPossibleWords(words, prevguesses);
+  var possibleWords = jotto.narrowDownPossibleWords(words, previousGuesses);
   console.log(printf('%22s : %6s words', chalk.cyan('Possible'), humanize(possibleWords.length)));
 
   var guess = jotto.bestGuess(words, possibleWords);
