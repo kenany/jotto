@@ -29,8 +29,16 @@ $ jotto < guesses.json
 
 ## Installation
 
+For the `jotto` command-line executable:
+
 ``` bash
 $ npm install -g jotto
+```
+
+For programmatic usage:
+
+``` bash
+$ npm install jotto
 ```
 
 ## API
