@@ -33,4 +33,6 @@ function next() {
 
   var guess = jotto.bestGuess(words, possibleWords);
   console.log(printf('%22s : %6s', chalk.cyan('Best guess'), chalk.bold.green(guess)));
+
+  console.log(possibleWords)
 }
