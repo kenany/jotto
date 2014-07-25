@@ -1,0 +1,10 @@
+Jotto solver.
+
+Usage:
+  jotto < guesses.json
+  jotto -h | --help
+  jotto -v | --version
+
+Options:
+  -h --help     Show this screen.
+  -v --version     Show version.

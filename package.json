@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "chalk": "^0.4.0",
+    "graceful-fs": "^3.0.2",
     "humanize-number": "^0.0.2",
     "jots": "^1.0.0",
     "JSONStream": "^0.8.2",
@@ -27,6 +28,7 @@
     "lodash.foreach": "^2.4.1",
     "lodash.forown": "^2.4.1",
     "lodash.min": "^2.4.1",
+    "minimist": "^0.2.0",
     "no-repeated-letters": "^1.0.1",
     "printf": "^0.2.0",
     "sowpods-five": "^1.0.0"

@@ -1,11 +1,30 @@
 var jotto = require('../');
 var chalk = require('chalk');
+var fs = require('graceful-fs');
 var humanize = require('humanize-number');
 var JSONStream = require('JSONStream');
 var filter = require('lodash.filter');
+var minimist = require('minimist');
 var noRepeatedLetters = require('no-repeated-letters');
 var printf = require('printf');
 var words = require('sowpods-five');
+
+var argv = minimist(process.argv.slice(2), {
+  alias: {
+    h: 'help',
+    v: 'version'
+  }
+});
+
+if (argv.version) {
+  process.stdout.write(require('../package.json').version);
+  process.stdout.write('\n');
+  return;
+}
+else if (argv.help) {
+  fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
+  return;
+}
 
 var previousGuesses = {};
 
