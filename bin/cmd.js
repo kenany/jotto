@@ -52,4 +52,8 @@ function next() {
 
   var guess = jotto.bestGuess(words, possibleWords);
   console.log(printf('%22s : %6s', chalk.cyan('Best guess'), chalk.bold.green(guess)));
+
+  if (possibleWords.length < 6 && possibleWords.length > 1) {
+    console.log(printf('%22s : %s', chalk.cyan('Words'), possibleWords.join(', ')));
+  }
 }
