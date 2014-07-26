@@ -43,7 +43,7 @@ else {
 }
 
 function next() {
-  var words = sowpodsSix;
+  var words = sowpodsFive;
   var guesses = keys(previousGuesses);
   if (guesses && guesses[0]) {
     words = guesses[0].length === 6 ? sowpodsSix : sowpodsFive;
