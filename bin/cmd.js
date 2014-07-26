@@ -4,10 +4,12 @@ var fs = require('graceful-fs');
 var humanize = require('humanize-number');
 var JSONStream = require('JSONStream');
 var filter = require('lodash.filter');
+var keys = require('lodash.keys');
 var minimist = require('minimist');
 var noRepeatedLetters = require('no-repeated-letters');
 var printf = require('printf');
-var words = require('sowpods-five');
+var sowpodsFive = require('sowpods-five');
+var sowpodsSix = require('sowpods-six');
 
 var argv = minimist(process.argv.slice(2), {
   alias: {
@@ -41,6 +43,12 @@ else {
 }
 
 function next() {
+  var words = sowpodsSix;
+  var guesses = keys(previousGuesses);
+  if (guesses && guesses[0]) {
+    words = guesses[0].length === 6 ? sowpodsSix : sowpodsFive;
+  }
+
   console.log();
   console.log(printf('%22s : %6s words', chalk.cyan('Imported'), humanize(words.length)));
 

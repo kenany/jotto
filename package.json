@@ -27,11 +27,13 @@
     "lodash.filter": "^2.4.1",
     "lodash.foreach": "^2.4.1",
     "lodash.forown": "^2.4.1",
+    "lodash.keys": "^2.4.1",
     "lodash.min": "^2.4.1",
     "minimist": "^0.2.0",
     "no-repeated-letters": "^1.0.1",
     "printf": "^0.2.0",
-    "sowpods-five": "^1.0.0"
+    "sowpods-five": "^1.0.0",
+    "sowpods-six": "^1.0.0"
   },
   "devDependencies": {
     "lodash.isfunction": "^2.4.1",

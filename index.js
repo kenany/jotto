@@ -12,7 +12,7 @@ var min = require('lodash.min');
  * @api private
  */
 function guessResults(possibleWords, guess) {
-  var results = [0, 0, 0, 0, 0, 0];
+  var results = [0, 0, 0, 0, 0, 0, 0];
   forEach(possibleWords, function(word) {
     results[jots(word, guess)] += 1;
   });
