@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var jotto = require('../');
 var chalk = require('chalk');
 var fs = require('graceful-fs');
