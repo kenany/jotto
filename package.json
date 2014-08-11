@@ -23,7 +23,7 @@
     "graceful-fs": "^3.0.2",
     "humanize-number": "^0.0.2",
     "jots": "^1.0.0",
-    "JSONStream": "^0.8.2",
+    "JSONStream": "^0.9.0",
     "lodash.filter": "^2.4.1",
     "lodash.foreach": "^2.4.1",
     "lodash.forown": "^2.4.1",
