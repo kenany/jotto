@@ -36,7 +36,7 @@
     "sowpods-six": "^1.0.0"
   },
   "devDependencies": {
-    "lodash.isfunction": "^2.4.1",
+    "lodash.isfunction": "^3.0.0",
     "lodash.isplainobject": "^2.4.1",
     "tape": "^3.5.0"
   }
