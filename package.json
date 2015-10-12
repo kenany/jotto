@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "chalk": "^0.5.1",
-    "graceful-fs": "^3.0.2",
+    "graceful-fs": "^4.1.2",
     "humanize-number": "^0.0.2",
     "jots": "^1.0.0",
     "JSONStream": "^1.0.6",
