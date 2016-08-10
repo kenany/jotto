@@ -1,7 +1,7 @@
 var jots = require('jots');
 var forEach = require('lodash.foreach');
 var forOwn = require('lodash.forown');
-var min = require('lodash.min');
+var minBy = require('lodash.minby');
 
 /**
  * Figure out how likely each result is from this guess.
@@ -71,7 +71,7 @@ function narrowDownPossibleWords(words, previousGuesses) {
  * @api public
  */
 function bestGuess(words, possibleWords) {
-  return min(words, prefer);
+  return minBy(words, prefer);
 
   /**
    * Develop preference for possible words over impossible words.
