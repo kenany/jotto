@@ -25,7 +25,7 @@
     "jots": "^1.0.0",
     "JSONStream": "^1.0.6",
     "lodash.filter": "^4.5.1",
-    "lodash.foreach": "^3.0.0",
+    "lodash.foreach": "^4.4.1",
     "lodash.forown": "^3.0.0",
     "lodash.keys": "^3.0.0",
     "lodash.min": "^3.0.0",
