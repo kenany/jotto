@@ -4,7 +4,6 @@ var jotto = require('../');
 var chalk = require('chalk');
 var fs = require('graceful-fs');
 var humanize = require('humanize-number');
-var JSONStream = require('JSONStream');
 var filter = require('lodash.filter');
 var keys = require('lodash.keys');
 var minimist = require('minimist');
@@ -33,12 +32,16 @@ else if (argv.help) {
 var previousGuesses = {};
 
 if (!process.stdin.isTTY) {
-  process.stdin
-    .pipe(JSONStream.parse())
-    .on('root', function(obj) {
-      previousGuesses = obj;
-      next();
-    });
+  var temp = '';
+
+  process.stdin.on('data', function(chunk) {
+    temp += chunk;
+  });
+
+  process.stdin.on('end', function() {
+    previousGuesses = JSON.parse(temp);
+    next();
+  });
 }
 else {
   next();
