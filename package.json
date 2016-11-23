@@ -16,7 +16,11 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tape test/index.js"
+    "lint": "eslint *.js test/*.js",
+    "tests-only": "tape test/index.js",
+    "coverage": "nyc npm run -s tests-only",
+    "pretest": "npm run -s lint",
+    "test": "npm run -s tests-only"
   },
   "dependencies": {
     "chalk": "^1.1.1",
@@ -35,8 +39,11 @@
     "sowpods-six": "^1.0.0"
   },
   "devDependencies": {
+    "@kenan/eslint-config": "^4.0.0",
+    "eslint": "^3.10.2",
     "lodash.isfunction": "^3.0.0",
     "lodash.isplainobject": "^4.0.5",
+    "nyc": "^10.0.0",
     "tape": "^4.2.1"
   }
 }
