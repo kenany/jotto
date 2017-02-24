@@ -9,6 +9,7 @@ var keys = require('lodash.keys');
 var minimist = require('minimist');
 var noRepeatedLetters = require('no-repeated-letters');
 var printf = require('printf');
+var process = require('process');
 var sowpodsFive = require('sowpods-five');
 var sowpodsSix = require('sowpods-six');
 
@@ -22,11 +23,11 @@ var argv = minimist(process.argv.slice(2), {
 if (argv.version) {
   process.stdout.write(require('../package.json').version);
   process.stdout.write('\n');
-  return;
+  process.exit(0);
 }
 else if (argv.help) {
   fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
-  return;
+  process.exit(0);
 }
 
 var previousGuesses = {};
