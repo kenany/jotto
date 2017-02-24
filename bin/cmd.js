@@ -8,6 +8,7 @@ var filter = require('lodash.filter');
 var keys = require('lodash.keys');
 var minimist = require('minimist');
 var noRepeatedLetters = require('no-repeated-letters');
+var path = require('path');
 var printf = require('printf');
 var process = require('process');
 var sowpodsFive = require('sowpods-five');
@@ -26,7 +27,8 @@ if (argv.version) {
   process.exit(0);
 }
 else if (argv.help) {
-  fs.createReadStream(__dirname + '/usage.txt').pipe(process.stdout);
+  fs.createReadStream(path.resolve(__dirname, './usage.txt'))
+    .pipe(process.stdout);
   process.exit(0);
 }
 

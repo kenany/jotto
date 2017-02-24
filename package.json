@@ -16,7 +16,7 @@
     "test": "test"
   },
   "scripts": {
-    "lint": "eslint *.js test/*.js",
+    "lint": "eslint .",
     "tests-only": "tape test/index.js",
     "coverage": "nyc npm run -s tests-only",
     "pretest": "npm run -s lint",
