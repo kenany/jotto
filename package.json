@@ -12,9 +12,10 @@
     "jotto": "bin/cmd.js"
   },
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "files": [
+    "bin",
+    "index.js"
+  ],
   "scripts": {
     "lint": "eslint .",
     "tests-only": "tape test/index.js",
