@@ -24,11 +24,15 @@ var argv = minimist(process.argv.slice(2), {
 if (argv.version) {
   process.stdout.write(require('../package.json').version);
   process.stdout.write('\n');
+
+  // eslint-disable-next-line no-process-exit
   process.exit(0);
 }
 else if (argv.help) {
   fs.createReadStream(path.resolve(__dirname, './usage.txt'))
     .pipe(process.stdout);
+
+  // eslint-disable-next-line no-process-exit
   process.exit(0);
 }
 
