@@ -1,7 +1,6 @@
 var jots = require('jots');
-var forEach = require('lodash.foreach');
-var forOwn = require('lodash.forown');
-var minBy = require('lodash.minby');
+var forOwn = require('lodash/forOwn');
+var minBy = require('lodash/minBy');
 
 /**
  * Figure out how likely each result is from this guess.
@@ -13,7 +12,7 @@ var minBy = require('lodash.minby');
  */
 function guessResults(possibleWords, guess) {
   var results = [0, 0, 0, 0, 0, 0, 0];
-  forEach(possibleWords, function(word) {
+  possibleWords.forEach(function(word) {
     results[jots(word, guess)] += 1;
   });
   return results;
@@ -32,7 +31,7 @@ function guessValue(possibleWords, guess) {
 
   var average = 0;
   var sum = 0;
-  forEach(results, function(i) {
+  results.forEach(function(i) {
     average += Math.pow(i, 2);
     sum += i;
   });
@@ -51,7 +50,7 @@ function guessValue(possibleWords, guess) {
 function narrowDownPossibleWords(words, previousGuesses) {
   forOwn(previousGuesses, function(score, guess) {
     var possibilities = [];
-    forEach(words, function(word) {
+    words.forEach(function(word) {
       if (jots(word, guess) === score) {
         possibilities.push(word);
       }

@@ -3,8 +3,6 @@
 var chalk = require('chalk');
 var fs = require('graceful-fs');
 var humanize = require('humanize-number');
-var filter = require('lodash.filter');
-var keys = require('lodash.keys');
 var minimist = require('minimist');
 var noRepeatedLetters = require('no-repeated-letters');
 var path = require('path');
@@ -57,7 +55,7 @@ else {
 
 function next() {
   var words = sowpodsFive;
-  var guesses = keys(previousGuesses);
+  var guesses = Object.keys(previousGuesses);
   if (guesses && guesses[0]) {
     words = guesses[0].length === 6 ? sowpodsSix : sowpodsFive;
   }
@@ -66,7 +64,7 @@ function next() {
   console.log();
   console.log(printf('%22s : %6s words', chalk.cyan('Imported'), humanize(words.length)));
 
-  words = filter(words, noRepeatedLetters);
+  words = words.filter(noRepeatedLetters);
   console.log(printf('%22s : %6s words', chalk.cyan('Using'), humanize(words.length)));
 
   var possibleWords = jotto.narrowDownPossibleWords(words, previousGuesses);
