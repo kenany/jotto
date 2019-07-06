@@ -61,6 +61,7 @@ function next() {
     words = guesses[0].length === 6 ? sowpodsSix : sowpodsFive;
   }
 
+  /* eslint-disable no-console */
   console.log();
   console.log(printf('%22s : %6s words', chalk.cyan('Imported'), humanize(words.length)));
 
@@ -76,4 +77,5 @@ function next() {
   if (possibleWords.length < 6 && possibleWords.length > 1) {
     console.log(printf('%22s : %s', chalk.cyan('Words'), possibleWords.join(', ')));
   }
+  /* eslint-enable no-console */
 }
