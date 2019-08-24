@@ -1,4 +1,7 @@
-var jotto = require('../');
+'use strict';
+
+/* eslint-disable quote-props */
+
 var test = require('tape');
 var filter = require('lodash.filter');
 var forEach = require('lodash.foreach');
@@ -7,6 +10,8 @@ var isFunction = require('lodash.isfunction');
 var noRepeatedLetters = require('no-repeated-letters');
 var sowpodsFive = require('sowpods-five');
 var sowpodsSix = require('sowpods-six');
+
+var jotto = require('../');
 
 test('exports an object that contains two functions', function(t) {
   t.plan(3);
