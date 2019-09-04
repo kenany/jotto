@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-var jotto = require('../');
 var chalk = require('chalk');
 var fs = require('graceful-fs');
 var humanize = require('humanize-number');
@@ -13,6 +12,8 @@ var printf = require('printf');
 var process = require('process');
 var sowpodsFive = require('sowpods-five');
 var sowpodsSix = require('sowpods-six');
+
+var jotto = require('../');
 
 var argv = minimist(process.argv.slice(2), {
   alias: {
