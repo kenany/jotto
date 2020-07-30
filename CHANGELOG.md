@@ -1,3 +1,10 @@
+### [2.1.12](https://github.com/KenanY/jotto/compare/2.1.11...2.1.12) (2020-07-30)
+
+
+### Bug Fixes
+
+* **deps:** graceful-fs@4.2.4 ([75975ba](https://github.com/KenanY/jotto/commit/75975ba960063347cc58483193e2e212e949d0d2))
+
 ### [2.1.11](https://github.com/KenanY/jotto/compare/2.1.10...2.1.11) (2020-07-30)
 
 
