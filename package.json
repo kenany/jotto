@@ -28,7 +28,7 @@
     "chalk": "^4.1.0",
     "graceful-fs": "^4.2.4",
     "humanize-number": "^0.0.2",
-    "jots": "^1.0.0",
+    "jots": "^1.0.5",
     "lodash.filter": "^4.5.1",
     "lodash.foreach": "^4.4.1",
     "lodash.forown": "^4.3.1",
