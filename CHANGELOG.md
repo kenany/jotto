@@ -1,3 +1,10 @@
+### [2.1.13](https://github.com/KenanY/jotto/compare/2.1.12...2.1.13) (2020-07-31)
+
+
+### Bug Fixes
+
+* **deps:** jots@1.0.5 ([856b138](https://github.com/KenanY/jotto/commit/856b138d9ec4e900363584c1321c61691afa4b7f))
+
 ### [2.1.12](https://github.com/KenanY/jotto/compare/2.1.11...2.1.12) (2020-07-30)
 
 
