@@ -1,3 +1,10 @@
+### [2.1.14](https://github.com/KenanY/jotto/compare/2.1.13...2.1.14) (2020-08-19)
+
+
+### Bug Fixes
+
+* **deps:** minimist@1.2.5 ([a8b60fa](https://github.com/KenanY/jotto/commit/a8b60fa5f890420f594ccff28c84dacf2e12afeb))
+
 ### [2.1.13](https://github.com/KenanY/jotto/compare/2.1.12...2.1.13) (2020-07-31)
 
 
