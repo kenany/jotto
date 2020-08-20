@@ -1,3 +1,10 @@
+### [2.1.15](https://github.com/KenanY/jotto/compare/2.1.14...2.1.15) (2020-08-20)
+
+
+### Bug Fixes
+
+* **deps:** no-repeated-letters@1.1.1 ([3b9bc2d](https://github.com/KenanY/jotto/commit/3b9bc2d568c2b11a949bbf8601aa536137649cae))
+
 ### [2.1.14](https://github.com/KenanY/jotto/compare/2.1.13...2.1.14) (2020-08-19)
 
 
