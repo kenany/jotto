@@ -1,3 +1,10 @@
+### [2.1.17](https://github.com/KenanY/jotto/compare/2.1.16...2.1.17) (2020-08-25)
+
+
+### Bug Fixes
+
+* **deps:** sowpods-five@1.0.1 ([f901b4d](https://github.com/KenanY/jotto/commit/f901b4d308b0f03b98fd0d07304bc41574bea345))
+
 ### [2.1.16](https://github.com/KenanY/jotto/compare/2.1.15...2.1.16) (2020-08-24)
 
 
