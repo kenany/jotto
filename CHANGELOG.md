@@ -1,3 +1,10 @@
+### [2.1.18](https://github.com/KenanY/jotto/compare/2.1.17...2.1.18) (2020-10-06)
+
+
+### Bug Fixes
+
+* **deps:** printf@0.6.0 ([0332b4c](https://github.com/KenanY/jotto/commit/0332b4cdb6e0bce647d19a4210daae230afc0c9d))
+
 ### [2.1.17](https://github.com/KenanY/jotto/compare/2.1.16...2.1.17) (2020-08-25)
 
 
