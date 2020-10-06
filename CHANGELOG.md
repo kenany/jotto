@@ -1,3 +1,10 @@
+### [2.1.19](https://github.com/KenanY/jotto/compare/2.1.18...2.1.19) (2020-10-06)
+
+
+### Bug Fixes
+
+* **deps:** lodash.filter@^4.6.0 ([279ee08](https://github.com/KenanY/jotto/commit/279ee08ef178739fa15274871c91922fc60fe441))
+
 ### [2.1.18](https://github.com/KenanY/jotto/compare/2.1.17...2.1.18) (2020-10-06)
 
 
