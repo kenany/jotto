@@ -33,7 +33,7 @@
     "lodash.foreach": "^4.5.0",
     "lodash.forown": "^4.4.0",
     "lodash.keys": "^4.2.0",
-    "lodash.minby": "^4.5.1",
+    "lodash.minby": "^4.6.0",
     "minimist": "^1.2.5",
     "no-repeated-letters": "^1.1.1",
     "printf": "^0.6.0",
