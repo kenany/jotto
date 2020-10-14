@@ -1,3 +1,10 @@
+### [2.1.22](https://github.com/KenanY/jotto/compare/2.1.21...2.1.22) (2020-10-14)
+
+
+### Bug Fixes
+
+* **deps:** lodash.keys@^4.2.0 ([e9366f6](https://github.com/KenanY/jotto/commit/e9366f6c3470730e901d6cf588d723fdd4bc8a31))
+
 ### [2.1.21](https://github.com/KenanY/jotto/compare/2.1.20...2.1.21) (2020-10-14)
 
 
