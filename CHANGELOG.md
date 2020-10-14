@@ -1,3 +1,10 @@
+### [2.1.20](https://github.com/KenanY/jotto/compare/2.1.19...2.1.20) (2020-10-14)
+
+
+### Bug Fixes
+
+* **deps:** lodash.foreach@^4.5.0 ([5935d56](https://github.com/KenanY/jotto/commit/5935d5678dc6632df8c784432a8187d123a69643))
+
 ### [2.1.19](https://github.com/KenanY/jotto/compare/2.1.18...2.1.19) (2020-10-06)
 
 
