@@ -1,3 +1,10 @@
+### [2.1.23](https://github.com/KenanY/jotto/compare/2.1.22...2.1.23) (2020-10-14)
+
+
+### Bug Fixes
+
+* **deps:** lodash.minby@4.6.0 ([6aa2969](https://github.com/KenanY/jotto/commit/6aa2969397cc61ccf4d43fc5cf9faa3e667962c8))
+
 ### [2.1.22](https://github.com/KenanY/jotto/compare/2.1.21...2.1.22) (2020-10-14)
 
 
