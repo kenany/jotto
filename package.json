@@ -16,6 +16,9 @@
     "bin",
     "index.js"
   ],
+  "engines": {
+    "node": "10 || 12 || >=14"
+  },
   "scripts": {
     "lint": "eslint .",
     "tests-only": "tape test/index.js",
