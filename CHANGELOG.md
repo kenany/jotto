@@ -1,3 +1,15 @@
+## [3.0.0](https://github.com/KenanY/jotto/compare/2.1.23...3.0.0) (2020-10-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v10 is now the minimum supported version of
+Node.js.
+
+### Features
+
+* require at least Node.js v10 ([6a99e45](https://github.com/KenanY/jotto/commit/6a99e451616e73b21d31b002f6af0ce1f00d83b6))
+
 ### [2.1.23](https://github.com/KenanY/jotto/compare/2.1.22...2.1.23) (2020-10-14)
 
 
