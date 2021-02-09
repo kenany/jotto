@@ -54,6 +54,6 @@
     "lodash.isplainobject": "4.0.6",
     "nyc": "15.1.0",
     "semantic-release": "^17.3.1",
-    "tape": "5.0.1"
+    "tape": "5.1.1"
   }
 }
