@@ -1,3 +1,10 @@
+### [3.0.3](https://github.com/KenanY/jotto/compare/3.0.2...3.0.3) (2021-05-26)
+
+
+### Bug Fixes
+
+* **deps:** printf@0.6.1 ([10c9a12](https://github.com/KenanY/jotto/commit/10c9a124f5bb22ffabc949bb7481f335f30e9be9))
+
 ### [3.0.2](https://github.com/KenanY/jotto/compare/3.0.1...3.0.2) (2021-05-19)
 
 
