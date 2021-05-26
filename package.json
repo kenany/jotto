@@ -39,7 +39,7 @@
     "lodash.minby": "^4.6.0",
     "minimist": "^1.2.5",
     "no-repeated-letters": "^1.1.1",
-    "printf": "^0.6.0",
+    "printf": "^0.6.1",
     "sowpods-five": "^1.0.1",
     "sowpods-six": "^1.0.0"
   },
