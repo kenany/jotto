@@ -1,3 +1,10 @@
+### [3.0.4](https://github.com/KenanY/jotto/compare/3.0.3...3.0.4) (2021-05-26)
+
+
+### Bug Fixes
+
+* **deps:** chalk@4.1.1 ([4ee3e46](https://github.com/KenanY/jotto/commit/4ee3e466554512e81f33ff7fc3c193d44196a96f))
+
 ### [3.0.3](https://github.com/KenanY/jotto/compare/3.0.2...3.0.3) (2021-05-26)
 
 
