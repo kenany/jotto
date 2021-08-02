@@ -1,3 +1,10 @@
+### [3.0.5](https://github.com/KenanY/jotto/compare/3.0.4...3.0.5) (2021-08-02)
+
+
+### Bug Fixes
+
+* prefer `const` and `let` ([6413182](https://github.com/KenanY/jotto/commit/6413182aee763e3c3b1138ad8c46329da4688b49))
+
 ### [3.0.4](https://github.com/KenanY/jotto/compare/3.0.3...3.0.4) (2021-05-26)
 
 
