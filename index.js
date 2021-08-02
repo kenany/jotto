@@ -1,18 +1,18 @@
-var jots = require('jots');
-var forEach = require('lodash.foreach');
-var forOwn = require('lodash.forown');
-var minBy = require('lodash.minby');
+const jots = require('jots');
+const forEach = require('lodash.foreach');
+const forOwn = require('lodash.forown');
+const minBy = require('lodash.minby');
 
 /**
  * Figure out how likely each result is from this guess.
  *
- * @param {Array} possible words
- * @param {String} guess
- * @return {Array} results
+ * @param {readonly string[]} possibleWords
+ * @param {string} guess
+ * @return {number[]} results
  * @api private
  */
 function guessResults(possibleWords, guess) {
-  var results = [0, 0, 0, 0, 0, 0, 0];
+  const results = [0, 0, 0, 0, 0, 0, 0];
   forEach(possibleWords, function(word) {
     results[jots(word, guess)] += 1;
   });
@@ -22,16 +22,16 @@ function guessResults(possibleWords, guess) {
 /**
  * Get the weighted average of the results. Lower is better.
  *
- * @param {Array} possible words
- * @param {String} guess
- * @return {Number} average
+ * @param {readonly string[]} possibleWords
+ * @param {string} guess
+ * @return {number} average
  * @api private
  */
 function guessValue(possibleWords, guess) {
-  var results = guessResults(possibleWords, guess);
+  const results = guessResults(possibleWords, guess);
 
-  var average = 0;
-  var sum = 0;
+  let average = 0;
+  let sum = 0;
   forEach(results, function(i) {
     average += Math.pow(i, 2);
     sum += i;
@@ -43,14 +43,14 @@ function guessValue(possibleWords, guess) {
 /**
  * Narrows down possible solutions based on previous guesses.
  *
- * @param {Array} words
- * @param {Array} previous guesses
- * @return {Array} possible words
+ * @param {string[]} words
+ * @param {readonly string[]} previousGuesses
+ * @return {string[]} possible words
  * @api public
  */
 function narrowDownPossibleWords(words, previousGuesses) {
   forOwn(previousGuesses, function(score, guess) {
-    var possibilities = [];
+    const possibilities = [];
     forEach(words, function(word) {
       if (jots(word, guess) === score) {
         possibilities.push(word);
@@ -65,9 +65,9 @@ function narrowDownPossibleWords(words, previousGuesses) {
 /**
  * Figure out the best possible guess.
  *
- * @param {Array} words
- * @param {Array} possible words
- * @return {String} best guess
+ * @param {readonly string[]} words
+ * @param {readonly string[]} possibleWords
+ * @return {string} best guess
  * @api public
  */
 function bestGuess(words, possibleWords) {
@@ -76,8 +76,8 @@ function bestGuess(words, possibleWords) {
   /**
    * Develop preference for possible words over impossible words.
    *
-   * @param {String} guess
-   * @return {Number} preference
+   * @param {string} guess
+   * @return {number} preference
    * @api private
    */
   function prefer(guess) {
@@ -85,8 +85,7 @@ function bestGuess(words, possibleWords) {
   }
 }
 
-var jotto = {};
-jotto.narrowDownPossibleWords = narrowDownPossibleWords;
-jotto.bestGuess = bestGuess;
-
-module.exports = jotto;
+module.exports = {
+  bestGuess,
+  narrowDownPossibleWords
+};

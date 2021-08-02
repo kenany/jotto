@@ -2,16 +2,16 @@
 
 /* eslint-disable quote-props */
 
-var test = require('tape');
-var filter = require('lodash.filter');
-var forEach = require('lodash.foreach');
-var isPlainObject = require('lodash.isplainobject');
-var isFunction = require('lodash.isfunction');
-var noRepeatedLetters = require('no-repeated-letters');
-var sowpodsFive = require('sowpods-five');
-var sowpodsSix = require('sowpods-six');
+const test = require('tape');
+const filter = require('lodash.filter');
+const forEach = require('lodash.foreach');
+const isPlainObject = require('lodash.isplainobject');
+const isFunction = require('lodash.isfunction');
+const noRepeatedLetters = require('no-repeated-letters');
+const sowpodsFive = require('sowpods-five');
+const sowpodsSix = require('sowpods-six');
 
-var jotto = require('../');
+const jotto = require('../');
 
 test('exports an object that contains two functions', function(t) {
   t.plan(3);
@@ -23,7 +23,7 @@ test('exports an object that contains two functions', function(t) {
 test('calculates best guess', function(t) {
   t.plan(7);
 
-  var TEST_GUESSES = [
+  const TEST_GUESSES = [
     [{ 'bread': 0 }, 'tying'],
     [{ 'bread': 1 }, 'algin'],
     [{ 'bread': 2 }, 'parts'],
@@ -33,9 +33,9 @@ test('calculates best guess', function(t) {
     [{ 'abcde': 1, 'fghij': 1, 'klmno': 1, 'pqrst': 1, 'uvwxy': 1 }, 'riley']
   ];
 
-  var words = filter(sowpodsFive, noRepeatedLetters);
+  const words = filter(sowpodsFive, noRepeatedLetters);
   forEach(TEST_GUESSES, function(fixture) {
-    var possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
+    const possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
     t.equal(jotto.bestGuess(words, possibleWords), fixture[1]);
   });
 });
@@ -43,7 +43,7 @@ test('calculates best guess', function(t) {
 test('works with six-letter words', function(t) {
   t.plan(5);
 
-  var TEST_GUESSES = [
+  const TEST_GUESSES = [
     [{ 'charts': 0 }, 'puking'],
     [{ 'charts': 1 }, 'gamins'],
     [{ 'charts': 2 }, 'ingots'],
@@ -51,9 +51,9 @@ test('works with six-letter words', function(t) {
     [{ 'charts': 4 }, 'chopin']
   ];
 
-  var words = filter(sowpodsSix, noRepeatedLetters);
+  const words = filter(sowpodsSix, noRepeatedLetters);
   forEach(TEST_GUESSES, function(fixture) {
-    var possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
+    const possibleWords = jotto.narrowDownPossibleWords(words, fixture[0]);
     t.equal(jotto.bestGuess(words, possibleWords), fixture[1]);
   });
 });

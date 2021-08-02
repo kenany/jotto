@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-var chalk = require('chalk');
-var fs = require('graceful-fs');
-var humanize = require('humanize-number');
-var filter = require('lodash.filter');
-var keys = require('lodash.keys');
-var minimist = require('minimist');
-var noRepeatedLetters = require('no-repeated-letters');
-var path = require('path');
-var printf = require('printf');
-var process = require('process');
-var sowpodsFive = require('sowpods-five');
-var sowpodsSix = require('sowpods-six');
+const chalk = require('chalk');
+const fs = require('graceful-fs');
+const humanize = require('humanize-number');
+const filter = require('lodash.filter');
+const keys = require('lodash.keys');
+const minimist = require('minimist');
+const noRepeatedLetters = require('no-repeated-letters');
+const path = require('path');
+const printf = require('printf');
+const process = require('process');
+const sowpodsFive = require('sowpods-five');
+const sowpodsSix = require('sowpods-six');
 
-var jotto = require('../');
+const jotto = require('../');
 
-var argv = minimist(process.argv.slice(2), {
+const argv = minimist(process.argv.slice(2), {
   alias: {
     h: 'help',
     v: 'version'
@@ -37,10 +37,10 @@ else if (argv.help) {
   process.exit(0);
 }
 
-var previousGuesses = {};
+let previousGuesses = {};
 
 if (!process.stdin.isTTY) {
-  var temp = '';
+  let temp = '';
 
   process.stdin.on('data', function(chunk) {
     temp += chunk;
@@ -56,8 +56,8 @@ else {
 }
 
 function next() {
-  var words = sowpodsFive;
-  var guesses = keys(previousGuesses);
+  let words = sowpodsFive;
+  const guesses = keys(previousGuesses);
   if (guesses && guesses[0]) {
     words = guesses[0].length === 6 ? sowpodsSix : sowpodsFive;
   }
@@ -69,10 +69,10 @@ function next() {
   words = filter(words, noRepeatedLetters);
   console.log(printf('%22s : %6s words', chalk.cyan('Using'), humanize(words.length)));
 
-  var possibleWords = jotto.narrowDownPossibleWords(words, previousGuesses);
+  const possibleWords = jotto.narrowDownPossibleWords(words, previousGuesses);
   console.log(printf('%22s : %6s words', chalk.cyan('Possible'), humanize(possibleWords.length)));
 
-  var guess = jotto.bestGuess(words, possibleWords);
+  const guess = jotto.bestGuess(words, possibleWords);
   console.log(printf('%22s : %6s', chalk.cyan('Best guess'), chalk.bold.green(guess)));
 
   if (possibleWords.length < 6 && possibleWords.length > 1) {
