@@ -1,3 +1,10 @@
+### [3.0.7](https://github.com/KenanY/jotto/compare/3.0.6...3.0.7) (2021-09-02)
+
+
+### Bug Fixes
+
+* **deps:** graceful-fs@4.2.8 ([ee8e2ea](https://github.com/KenanY/jotto/commit/ee8e2eae22276e131a0c71e5a4254aa90878859b))
+
 ### [3.0.6](https://github.com/KenanY/jotto/compare/3.0.5...3.0.6) (2021-08-02)
 
 
