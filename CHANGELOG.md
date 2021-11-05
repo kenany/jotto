@@ -1,3 +1,10 @@
+### [3.0.8](https://github.com/KenanY/jotto/compare/3.0.7...3.0.8) (2021-11-05)
+
+
+### Bug Fixes
+
+* **deps:** jots@2.0.1 ([791ef32](https://github.com/KenanY/jotto/commit/791ef321884a164a13282bf22fe4aa2cedde9e8b))
+
 ### [3.0.7](https://github.com/KenanY/jotto/compare/3.0.6...3.0.7) (2021-09-02)
 
 
