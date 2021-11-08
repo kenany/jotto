@@ -1,3 +1,19 @@
+## [4.0.0](https://github.com/KenanY/jotto/compare/3.0.8...4.0.0) (2021-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* **ci:** Node.js v10 is no longer supported.
+
+### Features
+
+* **ci:** drop Node.js v10 support ([51f9825](https://github.com/KenanY/jotto/commit/51f98254ef14faba822616123ecd71ad3da34acd))
+
+
+### Bug Fixes
+
+* **deps:** jots@3.0.0 ([7860b17](https://github.com/KenanY/jotto/commit/7860b17cd776bb37d85449e173db642d2988c2aa))
+
 ### [3.0.8](https://github.com/KenanY/jotto/compare/3.0.7...3.0.8) (2021-11-05)
 
 
