@@ -7,7 +7,7 @@
   ],
   "repository": "KenanY/jotto",
   "license": "MIT",
-  "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "bin": {
     "jotto": "bin/cmd.js"
   },
@@ -17,7 +17,7 @@
     "index.js"
   ],
   "engines": {
-    "node": "10 || 12 || >=14"
+    "node": "12 || 14 || >=16"
   },
   "scripts": {
     "lint": "eslint .",
