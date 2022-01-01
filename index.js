@@ -1,6 +1,6 @@
+'use strict';
+
 const jots = require('jots');
-const forEach = require('lodash.foreach');
-const forOwn = require('lodash.forown');
 const minBy = require('lodash.minby');
 
 /**
@@ -13,9 +13,9 @@ const minBy = require('lodash.minby');
  */
 function guessResults(possibleWords, guess) {
   const results = [0, 0, 0, 0, 0, 0, 0];
-  forEach(possibleWords, function(word) {
+  for (const word of possibleWords) {
     results[jots(word, guess)] += 1;
-  });
+  }
   return results;
 }
 
@@ -32,10 +32,10 @@ function guessValue(possibleWords, guess) {
 
   let average = 0;
   let sum = 0;
-  forEach(results, function(i) {
+  for (const i of results) {
     average += Math.pow(i, 2);
     sum += i;
-  });
+  }
 
   return average / sum;
 }
@@ -43,23 +43,19 @@ function guessValue(possibleWords, guess) {
 /**
  * Narrows down possible solutions based on previous guesses.
  *
- * @param {string[]} words
- * @param {readonly string[]} previousGuesses
- * @return {string[]} possible words
+ * @param {readonly string[]} words Valid words.
+ * @param {{ [guess: string]: number; }} previousGuesses Previous guesses and
+ *  their scores.
+ * @return {string[]} Possible words.
  * @api public
  */
 function narrowDownPossibleWords(words, previousGuesses) {
-  forOwn(previousGuesses, function(score, guess) {
-    const possibilities = [];
-    forEach(words, function(word) {
-      if (jots(word, guess) === score) {
-        possibilities.push(word);
-      }
-    });
-    words = possibilities;
-  });
-
-  return words;
+  return words
+    .filter(
+      (word) => Object.entries(previousGuesses).every(
+        ([guess, score]) => jots(word, guess) === score
+      )
+    );
 }
 
 /**
@@ -71,18 +67,7 @@ function narrowDownPossibleWords(words, previousGuesses) {
  * @api public
  */
 function bestGuess(words, possibleWords) {
-  return minBy(words, prefer);
-
-  /**
-   * Develop preference for possible words over impossible words.
-   *
-   * @param {string} guess
-   * @return {number} preference
-   * @api private
-   */
-  function prefer(guess) {
-    return guessValue(possibleWords, guess);
-  }
+  return minBy(words, (guess) => guessValue(possibleWords, guess));
 }
 
 module.exports = {
