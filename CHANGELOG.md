@@ -1,3 +1,10 @@
+## [4.1.0](https://github.com/KenanY/jotto/compare/4.0.0...4.1.0) (2022-01-01)
+
+
+### Features
+
+* **deps:** remove most lodash dependencies ([dd98a6d](https://github.com/KenanY/jotto/commit/dd98a6d12c58ec1078cebccb595160e504ac0f8d))
+
 ## [4.0.0](https://github.com/KenanY/jotto/compare/3.0.8...4.0.0) (2021-11-08)
 
 
