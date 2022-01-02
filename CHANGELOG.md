@@ -1,3 +1,10 @@
+### [4.1.2](https://github.com/KenanY/jotto/compare/4.1.1...4.1.2) (2022-01-02)
+
+
+### Bug Fixes
+
+* **deps:** no-repeated-letters@3.1.0 ([780565d](https://github.com/KenanY/jotto/commit/780565d80e913cfd53adfc0c8db8dbd9ab9d1548))
+
 ### [4.1.1](https://github.com/KenanY/jotto/compare/4.1.0...4.1.1) (2022-01-01)
 
 
