@@ -1,3 +1,10 @@
+### [4.1.3](https://github.com/KenanY/jotto/compare/4.1.2...4.1.3) (2022-01-06)
+
+
+### Bug Fixes
+
+* **deps:** graceful-fs@4.2.9 ([b5c49fa](https://github.com/KenanY/jotto/commit/b5c49fa3bf148a2c032fcdef936fa02b54cb6e79))
+
 ### [4.1.2](https://github.com/KenanY/jotto/compare/4.1.1...4.1.2) (2022-01-02)
 
 
