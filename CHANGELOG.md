@@ -1,3 +1,10 @@
+### [4.1.4](https://github.com/KenanY/jotto/compare/4.1.3...4.1.4) (2022-03-30)
+
+
+### Bug Fixes
+
+* **deps:** minimist@1.2.6 ([a72743a](https://github.com/KenanY/jotto/commit/a72743ac2243e3e20873b5202bfd66f229890737))
+
 ### [4.1.3](https://github.com/KenanY/jotto/compare/4.1.2...4.1.3) (2022-01-06)
 
 
