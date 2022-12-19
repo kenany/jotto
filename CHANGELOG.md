@@ -1,3 +1,10 @@
+## [5.0.1](https://github.com/KenanY/jotto/compare/5.0.0...5.0.1) (2022-12-19)
+
+
+### Bug Fixes
+
+* **deps:** sowpods-five@2.0.0 ([38a5cc4](https://github.com/KenanY/jotto/commit/38a5cc4ffda579d4a73df6c5087d9ccd91fd3512))
+
 ## [5.0.0](https://github.com/KenanY/jotto/compare/4.1.6...5.0.0) (2022-12-19)
 
 
