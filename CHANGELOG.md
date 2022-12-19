@@ -1,3 +1,14 @@
+## [5.0.0](https://github.com/KenanY/jotto/compare/4.1.6...5.0.0) (2022-12-19)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v12 is no longer supported.
+
+### Features
+
+* drop Node.js v12 support ([6d34ae5](https://github.com/KenanY/jotto/commit/6d34ae582776ba0bd8a097cd85f947b552c6e100))
+
 ## [4.1.6](https://github.com/KenanY/jotto/compare/4.1.5...4.1.6) (2022-11-03)
 
 
