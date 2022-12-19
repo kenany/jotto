@@ -1,3 +1,10 @@
+## [5.0.2](https://github.com/KenanY/jotto/compare/5.0.1...5.0.2) (2022-12-19)
+
+
+### Bug Fixes
+
+* **deps:** jots@4.0.0 ([51ca4a9](https://github.com/KenanY/jotto/commit/51ca4a987de8b29803aeef63d5c9708666f6a268))
+
 ## [5.0.1](https://github.com/KenanY/jotto/compare/5.0.0...5.0.1) (2022-12-19)
 
 
