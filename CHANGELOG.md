@@ -1,3 +1,10 @@
+## [5.0.3](https://github.com/KenanY/jotto/compare/5.0.2...5.0.3) (2023-01-06)
+
+
+### Bug Fixes
+
+* **deps:** no-repeated-letters@4.1.0 ([d338365](https://github.com/KenanY/jotto/commit/d3383651587b9583669489a5c42b0011a423e87c))
+
 ## [5.0.2](https://github.com/KenanY/jotto/compare/5.0.1...5.0.2) (2022-12-19)
 
 
