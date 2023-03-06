@@ -1,3 +1,10 @@
+## [5.0.4](https://github.com/KenanY/jotto/compare/5.0.3...5.0.4) (2023-03-06)
+
+
+### Bug Fixes
+
+* **deps:** minimist@1.2.8 ([9f2ec43](https://github.com/KenanY/jotto/commit/9f2ec439e4f02b972b88cdb74776dd78b308b550))
+
 ## [5.0.3](https://github.com/KenanY/jotto/compare/5.0.2...5.0.3) (2023-01-06)
 
 
