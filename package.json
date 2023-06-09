@@ -37,7 +37,7 @@
     "no-repeated-letters": "^4.1.0",
     "printf": "^0.6.1",
     "sowpods-five": "^2.0.0",
-    "sowpods-six": "^1.0.0"
+    "sowpods-six": "^2.0.0"
   },
   "devDependencies": {
     "@kenan/eslint-config": "^10.0.2",
