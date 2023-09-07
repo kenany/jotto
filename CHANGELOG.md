@@ -1,3 +1,14 @@
+## [6.0.0](https://github.com/kenany/jotto/compare/5.0.6...6.0.0) (2023-09-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v14 and v16 are no longer supported.
+
+### Features
+
+* drop Node.js v14 and v16 ([8a2f081](https://github.com/kenany/jotto/commit/8a2f08195a31d5dc0faa06cdee734d217a6bdcba))
+
 ## [5.0.6](https://github.com/KenanY/jotto/compare/5.0.5...5.0.6) (2023-06-13)
 
 
