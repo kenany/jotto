@@ -5,7 +5,7 @@
   "keywords": [
     "jotto"
   ],
-  "repository": "KenanY/jotto",
+  "repository": "github:kenany/jotto",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (https://kenany.me/)",
   "bin": {
@@ -17,7 +17,7 @@
     "index.js"
   ],
   "engines": {
-    "node": "14 || 16 || >=18"
+    "node": "18 || >=20"
   },
   "scripts": {
     "lint": "eslint .",
