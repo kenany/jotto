@@ -36,7 +36,7 @@
     "minimist": "^1.2.8",
     "no-repeated-letters": "^4.1.0",
     "printf": "^0.6.1",
-    "sowpods-five": "^2.0.0",
+    "sowpods-five": "^3.0.0",
     "sowpods-six": "^2.0.0"
   },
   "devDependencies": {
