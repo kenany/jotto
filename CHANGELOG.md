@@ -1,3 +1,10 @@
+## [6.0.1](https://github.com/kenany/jotto/compare/6.0.0...6.0.1) (2023-10-01)
+
+
+### Bug Fixes
+
+* **deps:** sowpods-five@3.0.0 ([05a787d](https://github.com/kenany/jotto/commit/05a787d9f0c6d1de4ad10466fa0553bf61648f9d))
+
 ## [6.0.0](https://github.com/kenany/jotto/compare/5.0.6...6.0.0) (2023-09-07)
 
 
