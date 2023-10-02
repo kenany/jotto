@@ -1,3 +1,10 @@
+## [6.0.2](https://github.com/kenany/jotto/compare/6.0.1...6.0.2) (2023-10-02)
+
+
+### Bug Fixes
+
+* **deps:** sowpods-six@3.0.0 ([92bfa98](https://github.com/kenany/jotto/commit/92bfa98ba1e701ba11077c8a0d24825d86cb3c7d))
+
 ## [6.0.1](https://github.com/kenany/jotto/compare/6.0.0...6.0.1) (2023-10-01)
 
 
