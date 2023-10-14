@@ -1,3 +1,10 @@
+## [6.0.3](https://github.com/kenany/jotto/compare/6.0.2...6.0.3) (2023-10-14)
+
+
+### Bug Fixes
+
+* **deps:** jots@5.0.0 ([843a610](https://github.com/kenany/jotto/commit/843a6107e6ab1b78394a0f88fd1f2838b78e8ab9))
+
 ## [6.0.2](https://github.com/kenany/jotto/compare/6.0.1...6.0.2) (2023-10-02)
 
 
