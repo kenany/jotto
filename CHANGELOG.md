@@ -1,3 +1,10 @@
+## [6.0.4](https://github.com/kenany/jotto/compare/6.0.3...6.0.4) (2023-10-15)
+
+
+### Bug Fixes
+
+* **deps:** no-repeated-letters@5.0.0 ([9ab7d50](https://github.com/kenany/jotto/commit/9ab7d506cdac91bbd0d872dee08cac8123906cb8))
+
 ## [6.0.3](https://github.com/kenany/jotto/compare/6.0.2...6.0.3) (2023-10-14)
 
 
