@@ -41,10 +41,10 @@ $ npm install jotto
 ## API
 
 ``` javascript
-var jotto = require('jotto');
+import { narrowDownPossibleWords, bestGuess } from 'jotto';
 ```
 
-### jotto.narrowDownPossibleWords(words, previousGuesses)
+### narrowDownPossibleWords(words, previousGuesses)
 
 Given an _Array_ `words` of words and an _Object_ `previousGuesses` like this:
 
@@ -60,8 +60,8 @@ Given an _Array_ `words` of words and an _Object_ `previousGuesses` like this:
 the possible solutions to the current puzzle and returns the narrowed-down
 _Array_ of words.
 
-### jotto.bestGuess(words, possibleWords)
+### bestGuess(words, possibleWords)
 
-Given the _Array_ `words` that you used for `jotto.narrowDownPossibleWords` and
+Given the _Array_ `words` that you used for `narrowDownPossibleWords` and
 the _Array_ `possibleWords` that was returned, returns the word that would
 narrow down the possible words the most (the "best guess").
