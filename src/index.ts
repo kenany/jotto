@@ -1,4 +1,4 @@
-import jots from 'jots';
+import { jots } from 'jots';
 
 /**
  * Computes the frequency distribution of scores for a given guess against all
