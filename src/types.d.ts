@@ -1,8 +1,3 @@
-declare module 'jots' {
-  function jots(word: string, guess: string): number;
-  export = jots;
-}
-
 declare module 'humanize-number' {
   function humanize(n: number): string;
   export = humanize;

@@ -18,8 +18,8 @@ importers:
         specifier: ^0.0.2
         version: 0.0.2
       jots:
-        specifier: ^5.0.0
-        version: 5.0.0
+        specifier: ^6.0.0
+        version: 6.0.0
       minimist:
         specifier: ^1.2.8
         version: 1.2.8
@@ -1087,9 +1087,9 @@ packages:
     resolution: {integrity: sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==}
     engines: {node: '>= 0.6.0'}
 
-  jots@5.0.0:
-    resolution: {integrity: sha512-/c0yPglBkQ6z/OKllwXIsHSG4MuvCGERzH2/h3iqTyQ0C+Pvk8r7X89VDHzSrlX4aYkQexlCVb1xb3og9suVeA==}
-    engines: {node: 18 || >=20}
+  jots@6.0.0:
+    resolution: {integrity: sha512-wB3EyvnsMEGoomW2BZ4CroADwkLyLb0m1x7rtAFrm9QQdA2bAU6I/1wAljmMkdFCvR7o5lZTzsONhA2cJj/TUg==}
+    engines: {node: 22 || 24 || >=26}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -2987,7 +2987,7 @@ snapshots:
 
   java-properties@1.0.2: {}
 
-  jots@5.0.0: {}
+  jots@6.0.0: {}
 
   js-tokens@4.0.0: {}
 
