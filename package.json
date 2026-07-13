@@ -68,7 +68,7 @@
     "@types/node": "25.9.4",
     "conventional-changelog-conventionalcommits": "10.2.1",
     "publint": "0.3.21",
-    "semantic-release": "25.0.5",
+    "semantic-release": "25.0.6",
     "tsdown": "0.22.3",
     "typescript": "6.0.3",
     "vitest": "4.1.10"
