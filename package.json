@@ -31,7 +31,7 @@
     }
   },
   "bin": {
-    "jotto": "dist/cli.cjs"
+    "jotto": "dist/cli.mjs"
   },
   "files": [
     "dist",
@@ -49,7 +49,7 @@
     "prepare": "pnpm build"
   },
   "dependencies": {
-    "chalk": "^4.1.2",
+    "chalk": "^6.0.0",
     "graceful-fs": "^4.2.11",
     "humanize-number": "^0.0.2",
     "jots": "^6.0.0",
