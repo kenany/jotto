@@ -1,6 +1,6 @@
 import { bestGuess, narrowDownPossibleWords } from 'jotto';
 import { noRepeatedLetters } from 'no-repeated-letters';
-import sowpodsFive from 'sowpods-five';
+import { sowpodsFive } from 'sowpods-five';
 import sowpodsSix from 'sowpods-six';
 import { describe, expect, it } from 'vitest';
 

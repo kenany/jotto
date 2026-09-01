@@ -9,7 +9,7 @@ import humanize from 'humanize-number';
 import minimist from 'minimist';
 import { noRepeatedLetters } from 'no-repeated-letters';
 import printf from 'printf';
-import sowpodsFive from 'sowpods-five';
+import { sowpodsFive } from 'sowpods-five';
 import sowpodsSix from 'sowpods-six';
 
 import { bestGuess, narrowDownPossibleWords } from './index.js';

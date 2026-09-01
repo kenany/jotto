@@ -56,7 +56,7 @@
     "minimist": "^1.2.8",
     "no-repeated-letters": "^6.0.0",
     "printf": "^0.6.1",
-    "sowpods-five": "^3.0.0",
+    "sowpods-five": "^4.0.0",
     "sowpods-six": "^3.0.0"
   },
   "devDependencies": {

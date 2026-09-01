@@ -30,8 +30,8 @@ importers:
         specifier: ^0.6.1
         version: 0.6.1
       sowpods-five:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^4.0.0
+        version: 4.0.0
       sowpods-six:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1758,9 +1758,9 @@ packages:
     resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
     engines: {node: '>=0.10.0'}
 
-  sowpods-five@3.0.0:
-    resolution: {integrity: sha512-c+ijGNXK7tzmSBim2PLcXIaVKXhxZTOonT6iUGDvpLXcXkeF0ispdPuV164lc3jIPswgP8nyAFr4bVFaqlWH3Q==}
-    engines: {node: 18 || >=20}
+  sowpods-five@4.0.0:
+    resolution: {integrity: sha512-Mv9GweNNyh67knqcAZAAkCL2hYC9wsXGKuSsTaRvtZ1J9NLoKGAW+umyj3A+kM/N4ODu8e24w/PLRfKy4AhKcA==}
+    engines: {node: 22 || 24 || >=26}
 
   sowpods-six@3.0.0:
     resolution: {integrity: sha512-WC9HeEPMwaGzsYc8yi0A3hitxPkvx1SeNoCcM4i2s13ruulYEsEC2dUMTLJmE7Lk1Xx97w5XaDyhsYFwBErdeg==}
@@ -3563,7 +3563,7 @@ snapshots:
 
   source-map@0.6.1: {}
 
-  sowpods-five@3.0.0: {}
+  sowpods-five@4.0.0: {}
 
   sowpods-six@3.0.0: {}
 

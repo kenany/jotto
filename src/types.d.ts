@@ -8,11 +8,6 @@ declare module 'printf' {
   export = printf;
 }
 
-declare module 'sowpods-five' {
-  const words: string[];
-  export = words;
-}
-
 declare module 'sowpods-six' {
   const words: string[];
   export = words;
