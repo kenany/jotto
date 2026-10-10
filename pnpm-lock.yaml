@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       chalk:
-        specifier: ^6.0.0
+        specifier: ^6.0.1
         version: 6.0.1
       graceful-fs:
         specifier: ^4.2.11
