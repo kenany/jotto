@@ -6,7 +6,7 @@
 
 With a JSON file of previous guesses and their scores:
 
-``` json
+```json
 {
   "bread": 1,
   "anvil": 2
@@ -15,7 +15,7 @@ With a JSON file of previous guesses and their scores:
 
 Pipe it into `jotto` to get the best possible next guess:
 
-``` bash
+```bash
 $ jotto < guesses.json
 
     Imported : 12,478 words
@@ -28,19 +28,19 @@ $ jotto < guesses.json
 
 For the `jotto` command-line executable:
 
-``` bash
+```bash
 $ npm install -g jotto
 ```
 
 For programmatic usage:
 
-``` bash
+```bash
 $ npm install jotto
 ```
 
 ## API
 
-``` javascript
+```javascript
 import { narrowDownPossibleWords, bestGuess } from 'jotto';
 ```
 
@@ -48,7 +48,7 @@ import { narrowDownPossibleWords, bestGuess } from 'jotto';
 
 Given an _Array_ `words` of words and an _Object_ `previousGuesses` like this:
 
-``` javascript
+```javascript
 {
   'bread': 1,
   'anvil': 2
